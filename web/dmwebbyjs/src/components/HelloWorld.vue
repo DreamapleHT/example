@@ -1,7 +1,6 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-
   </div>
 </template>
 
@@ -14,8 +13,8 @@ export default {
   },
   methods:{
     getdata(){
-      let that=this;
-       this.$axios.get('/xingzuo').then(function(res){
+      let that=this;//赋值that为全局this
+      this.$axios.get('/xingzuo').then(function(res){
           console.log("%c DM控制==》Mock数据","color:red;font-size:24px");
           console.log(res.data);
           that.msg=res.data.list;
@@ -28,7 +27,7 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+<!-- 添加 "scoped" 属性限制css样式仅在组件内生效 -->
 <style scoped>
 h3 {
   margin: 40px 0 0;

@@ -1,8 +1,8 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <input type="text" v-model="test" />
-    <button @click="getJsonData">获取数据</button>
+    <a-input placeholder="Basic usage" v-model="test" />
+    <a-button type="primary" @click="getJsonData">获取数据</a-button>
   </div>
 </template>
 
@@ -22,14 +22,14 @@ getJsonData(){
     this.axios
     .post(url)
     .then(response => {
-      console.log("%c DM控制==》Mock数据","color:red;font-size:24px");
-      console.log("%c 成功", "color:blue;font-size:24px");
+      console.log("%c DM控制==》Mock数据","color:#40A9FF;font-size:24px");
+      console.log("%c 成功", "color:green;font-size:24px");
       console.log(response.data);
       this.test = response.data.list[0];
       this.msg = response.data.list[2];;
     })
     .catch(response => {
-      console.log("%c 失败", "color:blue;font-size:24px");
+      console.log("%c 失败", "color:red;font-size:24px");
       // console.log(response.data);
     });
   };

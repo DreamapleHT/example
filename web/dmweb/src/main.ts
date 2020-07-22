@@ -5,13 +5,15 @@ import router from "./router";
 // 自定义导入
 import axios from "axios";
 import Vueaxios from "vue-axios";
+import Antd from 'ant-design-vue';
+import 'ant-design-vue/dist/antd.css';
 
 require('./mock/mock.js');
-
-
-
 Vue.config.productionTip = false;
-Vue.use(Vueaxios, axios);
+Vue.use(Antd);
+Vue.use(Vueaxios,axios);
+
+// Vue.use(Vueaxios,axios,Antd);//会报错,组件未注册
 
 new Vue({
   router,
