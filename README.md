@@ -4,5 +4,5 @@
 # 目录结构
 
 web
---dmweb  vue+JavaScript+
---dmwebbyjs vue+Typescript+mock.js
+--dmweb  vue+JavaScript+mock.js  vue引入mock.js
+--dmwebbyjs vue+Typescript+mock.js vue引入mock.js
