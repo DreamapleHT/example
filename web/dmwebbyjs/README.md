@@ -1,24 +1,26 @@
 # dmwebbyjs
 
-## Project setup
+## 操作命令
+
+### 安装依赖
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 开发环境下执行热加载的编译
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 生产环境下编译，生成最小体积文件
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### 语法检测和修复
 ```
 npm run lint
 ```
 
-### Customize configuration
+### 自定义配置
 See [Configuration Reference](https://cli.vuejs.org/config/).
